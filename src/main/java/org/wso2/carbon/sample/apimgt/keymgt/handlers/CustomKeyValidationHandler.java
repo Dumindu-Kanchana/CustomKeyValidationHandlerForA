@@ -32,10 +32,7 @@ public class CustomKeyValidationHandler extends DefaultKeyValidationHandler {
      * @return
      */
     private List getConsumerKeyWhitelist() {
-        List<String> consumerKeyList = new LinkedList<>();
-        consumerKeyList.add("12312312312313");
-        consumerKeyList.add("31231232131231");
-        consumerKeyList.add("cepQ5ySA7tYXB4UXNlUioaNax78a");
-        return consumerKeyList;
+
+        return HandlerUtils.getConsumerKeyList();
     }
 }

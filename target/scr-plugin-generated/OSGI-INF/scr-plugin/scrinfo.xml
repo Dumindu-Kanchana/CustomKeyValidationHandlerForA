@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" immediate="true" name="org.demo.serviceactivator">
+        <implementation class="org.wso2.carbon.sample.apimgt.keymgt.handlers.internal.CustomKeyValidationHandlerServiceComponent"/>
+        <property name="service.pid" value="org.demo.serviceactivator" private="false"/>
+    </scr:component>
+</components>

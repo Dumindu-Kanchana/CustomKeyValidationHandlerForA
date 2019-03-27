@@ -1,0 +1,3 @@
+org/wso2/carbon/sample/apimgt/keymgt/handlers/HandlerUtils.class
+org/wso2/carbon/sample/apimgt/keymgt/handlers/internal/CustomKeyValidationHandlerServiceComponent.class
+org/wso2/carbon/sample/apimgt/keymgt/handlers/CustomKeyValidationHandler.class

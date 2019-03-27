@@ -6,7 +6,7 @@
 
     <groupId>org.wso2.carbon</groupId>
     <artifactId>org.wso2.carbon.sample.apimgt.keymgt.handlers</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>bundle</packaging>
 
     <dependencies>
@@ -116,12 +116,17 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
+                        <Private-Package>
+                            org.wso2.carbon.sample.apimgt.keymgt.handlers.internal,
+                        </Private-Package>
                         <Export-Package>
-                            org.wso2.carbon.sample.apimgt.keymgt.handlers.*,
+                            !org.wso2.carbon.sample.apimgt.keymgt.handlers.internal.*;,
+                            org.wso2.carbon.sample.apimgt.keymgt.handlers.*;version="1.0",
                         </Export-Package>
                         <Import-Package>
-                            org.apache.commons.logging.*;
-                            version="1.0.4",
+                            org.osgi.framework,
+                            org.osgi.service.component,
+                            org.apache.commons.logging.*;version="1.0.4",
                             org.apache.commons.lang; version="[2.6.0,3.0.0)",
                             *; resolution:=optional
                         </Import-Package>

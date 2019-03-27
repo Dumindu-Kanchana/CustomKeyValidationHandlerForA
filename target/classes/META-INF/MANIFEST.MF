@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.wso2.carbon.sample.apimgt.keymgt.handlers
+Built-By: dumindu
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1553655566715
+Import-Package: org.apache.commons.lang;version="[2.6.0,3.0.0)",org.ap
+ ache.commons.logging;version="1.0.4",org.osgi.framework;version="[1.5
+ ,2)",org.osgi.service.component;version="[1.1,2)",org.wso2.carbon.api
+ mgt.api.model;version="[6.3,7)";resolution:=optional,org.wso2.carbon.
+ apimgt.keymgt;version="[6.3,7)";resolution:=optional,org.wso2.carbon.
+ apimgt.keymgt.handlers;version="[6.3,7)";resolution:=optional,org.wso
+ 2.carbon.apimgt.keymgt.service;version="[6.3,7)";resolution:=optional
+ ,org.wso2.carbon.sample.apimgt.keymgt.handlers;version="[1.0,2)";reso
+ lution:=optional,org.wso2.carbon.utils;version="[4.4,5)";resolution:=
+ optional
+Service-Component: OSGI-INF/serviceComponents.xml
+DynamicImport-Package: *
+Tool: Bnd-1.43.0
+Export-Package: org.wso2.carbon.sample.apimgt.keymgt.handlers;uses:="o
+ rg.apache.commons.logging,org.wso2.carbon.apimgt.keymgt,org.wso2.carb
+ on.apimgt.api.model,org.wso2.carbon.apimgt.keymgt.service,org.wso2.ca
+ rbon.apimgt.keymgt.handlers";version="1.0"
+Bundle-Version: 1.0.0
+Bundle-Name: org.wso2.carbon.sample.apimgt.keymgt.handlers
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_172
+
